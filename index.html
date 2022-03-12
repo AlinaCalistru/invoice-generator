@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baloo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Invoice creator</title>
   </head>
   <body>
-    <header>
-      <h1>Invoice creator</h1>
-      <p>Thanks for choosing GoodCorp LLC!</p>
-    </header>
-    <div id="container">
-      <div class="buttons"></div>
-      <ul class="selected-services">
-        <li>
+    <div id="invoice">
+      <header>
+        <h1>Invoice creator</h1>
+        <p>Thanks for choosing GoodCorp LLC!</p>
+      </header>
+      <div id="container">
+        <div class="buttons"></div>
+        <div class="services-header">
           <div>TASK</div>
           <div>TOTAL</div>
-        </li>
-        <li></li>
-      </ul>
+        </div>
+        <ul class="selected-services"></ul>
+        <hr />
+        <div class="summary">
+          <div>
+            NOTES
+            <br />
+            <p>We accept cash, credit card, or PayPal</p>
+          </div>
+          <div>
+            TOTAL AMOUNT
+            <br />
+            <span class="total"></span>
+          </div>
+        </div>
 
-      <hr />
-      <div class="summary">
-        <div>
-          NOTES
-          <br />
-          <p>We accept cash, credit card, or PayPal</p>
-        </div>
-        <div>
-          TOTAL AMOUNT
-          <br />
-          <span class="total">$60</span>
-        </div>
+        <button id="btn-send">✉️ Send invoice</button>
       </div>
-
-      <button id="btn-send">✉️ Send invoice</button>
     </div>
     <script src="./index.js"></script>
   </body>
